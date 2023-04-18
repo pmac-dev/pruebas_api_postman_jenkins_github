@@ -1,0 +1,2647 @@
+{
+	"info": {
+		"_postman_id": "5af9d47c-e2f0-4be4-bc87-5234e2ac4c5c",
+		"name": "Moodle UGR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18442089"
+	},
+	"item": [
+		{
+			"name": "core_webservice_get_site_info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_webservice_get_site_info",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get TOKEN",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Testmoodle@1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "service",
+							"value": "moodle_mobile_app",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle2/login/token.php?service=webservicepoa&username=admin&password=Testmoodle@1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle2",
+						"login",
+						"token.php"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "webservicepoa"
+						},
+						{
+							"key": "username",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "Testmoodle@1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get TOKEN_alumno",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Testmoodle@1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "service",
+							"value": "moodle_mobile_app",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/login/token.php?service=moodle_mobile_app&username=usr_api&password=cvJ45@12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"login",
+						"token.php"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "moodle_mobile_app"
+						},
+						{
+							"key": "username",
+							"value": "usr_api"
+						},
+						{
+							"key": "password",
+							"value": "cvJ45@12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get TOKEN Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Testmoodle@1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "service",
+							"value": "moodle_mobile_app",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle2/login/token.php?service=webservicepoa&username=admin&password=Testmoodle@1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle2",
+						"login",
+						"token.php"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "webservicepoa"
+						},
+						{
+							"key": "username",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "Testmoodle@1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "bf64ea50d3c01c1a0e0147676cb502aa",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle2/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle2",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_search_courses (por tag id)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "e2f1cc5911a74b913bf2b946f6dadef1",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_search_courses",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "criterianame",
+							"value": "tagid",
+							"type": "text"
+						},
+						{
+							"key": "criteriavalue",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_search_courses (por titulo)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_search_courses",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "criterianame",
+							"value": "search",
+							"type": "text"
+						},
+						{
+							"key": "criteriavalue",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_badges_get_user_badges",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_badges_get_user_badges",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "criterianame",
+							"value": "search",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "criteriavalue",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userid",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_categories",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_courses RESTFULL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "5898513adf5846c486e4a034c3dee8eb",
+						"type": "text"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/restful/server.php/core_course_get_courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"restful",
+						"server.php",
+						"core_course_get_courses"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_tag_get_tag_areas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_tag_get_tag_areas",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_tag_get_tag_collections",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_tag_get_tag_collections",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_tag_get_tagindex",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_tag_get_tag_collections",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_tag_get_tags",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_tag_get_tags",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "tags[0][id]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tags[1][id]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "tags[2][id]",
+							"value": "1000",
+							"description": "Una opcion cutre es poner muchos para que lo supere, y luego funciona porque es quedarse solo con los tags",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_tag_get_tag_cloud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_tag_get_tag_cloud",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"description": "Se podria usar el totalcount para saber el numero de tags, y con eso iterar sobre el get_tags",
+							"type": "text"
+						},
+						{
+							"key": "tagcollid",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "enrol_manual_enrol_users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "enrol_manual_enrol_users",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "enrolments[0][roleid]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "enrolments[0][userid]",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "enrolments[0][courseid]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_create_courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_create_courses",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courses[0][fullname]",
+							"value": "PRUEBA14",
+							"type": "text"
+						},
+						{
+							"key": "courses[0][shortname]",
+							"value": "prueba14",
+							"type": "text"
+						},
+						{
+							"key": "courses[0][categoryid]",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_list_course_competencies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_list_course_competencies",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_count_courses_using_competency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_count_courses_using_competency",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_list_templates_using_competency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_list_templates_using_competency",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_read_plan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_read_plan",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_list_plan_competencies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_list_plan_competencies",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_list_templates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_list_templates",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "ASC",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context[contextid]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "context[contextlevel]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context[instanceid]",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_read_template",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_read_template",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_count_competencies_in_course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_count_competencies_in_course",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_competency_list_user_plans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_competency_list_user_plans",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userid",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_contents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_contents",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courseid",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_course_module",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_course_module",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cmid",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_courses_by_field",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "e2f1cc5911a74b913bf2b946f6dadef1",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses_by_field",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "[id]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "[shortname]",
+							"value": "h5p1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "id",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_delete_courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_delete_courses",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "courseids[0]",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "[id]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "[shortname]",
+							"value": "h5p1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "category",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "value",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_create_categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_create_categories",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "categories[0][name]",
+							"value": "Nueva categoria",
+							"type": "text"
+						},
+						{
+							"key": "categories[0][description]",
+							"value": "Esta es la descripción",
+							"type": "text"
+						},
+						{
+							"key": "categories[0][parent]",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "field",
+							"value": "category",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "value",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_course_get_course_content_items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "5898513adf5846c486e4a034c3dee8eb",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_course_content_items",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courseid",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_user_get_users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "aa70253c55594276b8fdb37cef677386",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_user_get_users",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courseid",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "criteria[0][key]",
+							"value": "firstname",
+							"type": "text"
+						},
+						{
+							"key": "criteria[0][value]",
+							"value": "Pablo",
+							"type": "text"
+						},
+						{
+							"key": "criteria[0][key]",
+							"value": "email",
+							"type": "text"
+						},
+						{
+							"key": "criteria[0][value]",
+							"value": "pmartinezc@ugr.es",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ore_user_get_users_by_field",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "3eb87387667be871137a3bc74a95210b",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_user_get_users_by_field",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courseid",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "id",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "values[0]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "username",
+							"type": "text"
+						},
+						{
+							"key": "values[0]",
+							"value": "alumno1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "core_user_get_course_user_profiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "e2f1cc5911a74b913bf2b946f6dadef1",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_user_get_course_user_profiles",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courseid",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "id",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "values[0]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userlist[0][userid]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "userlist[0][courseid]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "userlist[1][userid]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userlist[1][courseid]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ore_user_get_users_by_field Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "wstoken",
+							"value": "3eb87387667be871137a3bc74a95210b",
+							"type": "text"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_user_get_users_by_field",
+							"type": "text"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json",
+							"type": "text"
+						},
+						{
+							"key": "options[ids][0]",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "courseid",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "id",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "values[0]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "field",
+							"value": "username",
+							"type": "text"
+						},
+						{
+							"key": "values[0]",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moodle/webservice/rest/server.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moodle",
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e155b4fd13ad51512994ba580c508934",
+							"disabled": true
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_courses",
+							"disabled": true
+						},
+						{
+							"key": "mooodlewsrestformat",
+							"value": "json",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
